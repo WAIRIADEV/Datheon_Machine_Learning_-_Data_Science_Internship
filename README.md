@@ -1,70 +1,81 @@
 # Datheon Machine Learning & Data Science Internship
 
-Submission by **Antony Wairia** ([@WAIRIADEV](https://github.com/WAIRIADEV)).
+# Datheon Machine Learning & Data Science Internship
 
-This repository contains my solutions to the Datheon Machine Learning & Data Science internship tasks. Each task lives in its own folder with its code, data, requirements and notes.
+**By Antony Wairia Kamau** · [@WAIRIADEV](https://github.com/WAIRIADEV)
 
-## Progress
+Welcome to my repository for the **Datheon Machine Learning & Data Science Internship**. This repository documents my progress through independent data science and machine learning projects, each exploring a different problem, dataset, and modelling approach.
 
-| # | Task | Status | Folder |
-|---|------|--------|--------|
-| 1 | Multi-Class Benchmark Classification Pipeline (Iris) | Done | [`task1_iris_classification/`](task1_iris_classification/) |
+My goal is to build practical experience in data analysis, data preprocessing, exploratory data analysis, model development, evaluation, and communicating results.
 
-More tasks will be added as I complete them.
+## Projects
 
-## Repository structure
+### 1. Iris Classification
 
-```
-.
+**Objective:** Classify iris flowers into their respective species using measurements of their petals and sepals.
+
+- **Dataset:** Iris dataset
+- **Models:** Logistic Regression and Decision Tree
+- **Focus:** Classification, feature scaling, model benchmarking, confusion matrices, and decision boundaries
+- **Best test accuracy:** 96.67%
+
+[Explore the Iris Classification project](./task1_iris_classification/)
+
+### 2. Housing Price Prediction
+
+**Objective:** Predict housing prices using available property features and evaluate different regression approaches.
+
+- **Models:** Linear Regression, Ridge Regression, and Lasso Regression
+- **Focus:** Regression, preprocessing, cross-validation, prediction evaluation, and residual analysis
+- **Best test \(R^2\):** 0.660
+
+The project investigates how well different linear regression approaches explain variation in housing prices.
+
+**Project details:** See the Housing Price Prediction project's own README.
+
+### 3. Telecom Customer Churn Prediction
+
+**Objective:** Predict whether a telecommunications customer is likely to leave the service.
+
+- **Dataset:** IBM Telco Customer Churn
+- **Models:** Random Forest and XGBoost
+- **Focus:** Exploratory data analysis, class imbalance, preprocessing pipelines, stratified cross-validation, and classification evaluation
+- **Best test ROC-AUC:** 0.8294
+- **XGBoost test recall:** 77.81%
+
+This project explores the trade-offs between identifying customers likely to churn and avoiding incorrect churn predictions.
+
+**Project details:** See the Telecom Customer Churn project's own README.
+
+## Tools and Technologies
+
+- **Language:** Python
+- **Data analysis:** pandas, NumPy
+- **Machine learning:** scikit-learn, XGBoost
+- **Visualization:** Matplotlib, Seaborn
+- **Development:** Jupyter Notebook
+- **Version control:** Git and GitHub
+
+## Repository Structure
+
+Each project has its own directory and documentation. Project-specific notebooks, datasets, dependencies, results, and other resources are maintained separately where applicable.
+
+```text
+Datheon_Machine_Learning_-_Data_Science_Internship/
 ├── README.md
-└── task1_iris_classification/
-    ├── README.md
-    ├── iris_classification.ipynb
-    ├── iris.csv
-    └── requirements.txt
+├── task1_iris_classification/
+├── [housing price prediction project folder]
+└── [telecom churn prediction project folder]
 ```
 
-## Task 1: Multi-Class Benchmark Classification Pipeline (Iris)
+*The folder names above should be confirmed against the actual repository before finalizing the links.*
 
-An end-to-end supervised classification pipeline on the Iris dataset (150 samples, 4 features, 3 balanced species).
+## About This Portfolio
 
-**Steps**
-1. Loaded and inspected the data with Pandas.
-2. Explored it with a Seaborn pairplot.
-3. Split the data 80/20 (stratified), then scaled with `StandardScaler`, fitting on the training set only to avoid data leakage.
-4. Trained Logistic Regression and a Decision Tree (`max_depth=3`).
-5. Benchmarked accuracy, macro precision, macro recall and macro F1.
-6. Plotted confusion matrix heatmaps for both models.
-7. Plotted decision boundaries using the two petal features.
+These projects represent different applications of machine learning rather than stages of a single workflow. Their datasets, objectives, evaluation metrics, and findings are therefore specific to each project.
 
-**Results (test set, 30 samples)**
 
-| Model | Accuracy | Precision | Recall | F1 |
-|-------|----------|-----------|--------|----|
-| Logistic Regression | 0.9333 | 0.9333 | 0.9333 | 0.9333 |
-| Decision Tree | 0.9667 | 0.9697 | 0.9667 | 0.9666 |
 
-**Key findings**
-- Setosa is classified perfectly by both models. All errors are between versicolor and virginica.
-- Petal features separate the species better than sepal features.
-- The Decision Tree scored one sample higher (29/30 vs 28/30), which is not conclusive on a test set this small.
-- Logistic Regression draws slanted linear boundaries, while the Decision Tree draws axis-aligned rectangles.
+**Antony Wairia Kamau**
 
-The notebook also documents the errors I ran into and how I fixed each one.
-
-## How to run
-
-```bash
-git clone https://github.com/WAIRIADEV/Datheon_Machine_Learning_-_Data_Science_Internship.git
-cd Datheon_Machine_Learning_-_Data_Science_Internship/task1_iris_classification
-pip install -r requirements.txt
-jupyter notebook iris_classification.ipynb
-```
-
-## Tools
-
-Python, Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Jupyter Notebook.
-
-## Dataset
-
-Iris dataset from the [seaborn-data repository](https://github.com/mwaskom/seaborn-data).
+GitHub: [@WAIRIADEV](https://github.com/WAIRIADEV)
