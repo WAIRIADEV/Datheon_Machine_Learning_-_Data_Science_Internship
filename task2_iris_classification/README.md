@@ -104,7 +104,7 @@ Two diagnostic visualizations were created:
 - **Actual vs. Predicted Plot:** compares actual house values against model predictions.
 - **Residual Plot:** examines prediction errors relative to predicted values.
 
-## 📊 Results
+##  Results
 
 ### Cross-Validation Results
 
