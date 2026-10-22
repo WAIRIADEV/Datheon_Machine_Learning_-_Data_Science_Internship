@@ -1,4 +1,4 @@
-# California Housing Price Prediction 🏡
+# California Housing Price Prediction 
 
 A machine learning regression project that predicts median house values using the California Housing dataset. The project covers data cleaning, exploratory data analysis, feature engineering, model training, cross-validation, and evaluation on unseen data.
 
